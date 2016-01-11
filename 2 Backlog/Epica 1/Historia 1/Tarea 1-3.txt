@@ -1,0 +1,41 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 1-3
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Desarrollar el código necesario para que el template funcione como es
+debido
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Descripción:
+
+	Alcance:
+
+	* Añadir el archivo data.js que se incluye en el directorio 
+	  de la historia. (Contiene todos los datos necesario para
+	  entender como desarrollar).
+	* Desarrollar en main.js un modulo “supportTool” con una 
+	  dependencia a “ngRoute”
+	* Crear rutas para que la url de entrada sea /support/ y en
+	  caso de introducir una url no conocida redirija a esa url.
+	* En "./js/directives/template-directives.js" crear las 
+	  directivas para el header y el footer.
+	* En "./js/directives/support-directives.js" crear la 
+	  directiva para el cuerpo de la pantalla de soporte sup.html
+	* Crear el controlar que cargue en el $scope la variable 
+	  projects llamando el servicio Projects en 
+	  "./js/services/support-services.js"
+	* En "./js/services/support-services.js" Crear el servicio 
+	  devuelve todos los proyectos de la empresa.
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

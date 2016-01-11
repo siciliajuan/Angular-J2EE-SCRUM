@@ -1,0 +1,24 @@
+<div id="title">
+	<h2>Proyectos:</h2>
+</div>
+<ul id="projects">
+	<li ng-repeat="project in projects">
+		<div id="project">
+			<p><b>Projecto:&nbsp;</b>{{project.name}}</p>
+			<p><b>Empresa:&nbsp;</b>{{project.customer.name}}</p>
+			<p><b>Nombre de contacto:&nbsp;</b>{{project.customer.contact.name}}</p>
+			<p><b>Apellido de contacto:&nbsp;</b>{{project.customer.contact.lastName}}</p>
+			<p><b>Email de contacto:&nbsp;</b>{{project.customer.contact.email}}</p>
+			<p><b>Tel&eacute;fono de contacto:&nbsp;</b>{{project.customer.contact.phone}}</p>
+			<a ng-href="#/support/notifications/{{project.id}}" ng-show="projectStatus(project) == 0">
+				<p>Ver historial de notificaciones (notificaciones pendientes)</p>
+			</a>
+			<a ng-href="#/support/notifications/{{project.id}}" ng-show="projectStatus(project) == 1">
+				<p>Ver historial de notificaciones (Todo cerrado)</p>
+			</a>
+			<a ng-href="#/support/notifications/{{project.id}}" ng-show="projectStatus(project) == 2">
+				<p>No tiene notificaciones</p>
+			</a>
+		</div>
+	</li>
+</ul>

@@ -1,0 +1,32 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 2-2
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Añadir la lógica necesaria para que la historia funcione correctamente
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Descripción:
+
+
+
+	Alcance:
+
+		
+	* Crear una directiva para cargar notificaciones.html e 
+	  introducir la directiva en sus.html
+	* La directiva debe de cargar las notificaciones de un proyecto 
+	  dado pidiéndoselas a support-services.js pasándole el id del 
+	  proyecto.
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

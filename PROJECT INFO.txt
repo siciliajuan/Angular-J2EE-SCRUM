@@ -1,0 +1,145 @@
+----------------------------------------------------------------
+------------                                        ------------
+------------            EJERCICIO TECNICO           ------------
+------------                                        ------------
+----------------------------------------------------------------
+
+
+
+INTRODUCCIÓN:
+
+Este documento explica como en que consiste y como se ha solucio-
+nado el ejercicio.
+
+
+-                   -----------------------                    -
+
+
+
+1- INDICE DEL EJERCICIO (PRIMERA PARTE):
+
+
+Los dos puntos son:
+
+	* 1.1- Analizar las historias y sus tareas a desarrollar.
+	* 1.2- Desarrollo de una aplicación front que en memoria
+	  resuelva el alcance.
+
+
+
+1.1- HISTORIAS Y TAREAS
+
+
+En la carpeta raíz del trabajo entregado, se puede encontrar un
+directorio “2 Backlog” en el, emulando los conceptos de SCRUM, 
+se ha depositado Una “Épica” que tiene 5 “Historias”, cada una 
+en una carpeta donde dentro están tanto la definición de la 
+historia como sus tareas.
+
+Ademas de esto para ofrecer mejor definición a las historias,
+dentro del directorio “Diseños”, he incluido diseños de la solu-
+ción tanto en versión móvil como en desktop en las carpetas 
+“1 Movil” y “2 Desktop”.
+
+
+
+1.2- DESARROLLO FRONT
+
+En el directorio raíz se encuentra una carpeta “1 Code” donde 
+se encuentra tanto el código de front como de back.
+
+El código front se encuentra en la carpeta “1 Front” en ella
+se encuentra todo el desarrollo front para una aplicación en 
+memoria.
+
+
+
+-                   -----------------------                    -
+
+
+
+2- INDICE DE EJERCICIO (SEGUNDA PARTE)
+
+
+Una vez resueltos los puntos básicos del ejercicio he realizado 
+los siguientes puntos:
+
+	* 2.1- Desarrollo de la aplicación back-end.
+	* 2.2- Desarrollo responsive del front-end.
+	* 2.3- Pruebas unitarias JS.
+	* 2.4- Pruebas unitarias back-end.
+
+
+
+2.1- DESARROLLO BACK
+
+
+En el directorio raíz se encuentra una carpeta “1 Code” donde 
+se encuentra tanto el código de front como de back.
+
+El código back se encuentra en la carpeta “2 Back” donde se 
+encuentra un documento “README” con información detallada de
+todo lo relacionado con el proyecto back.
+
+En resumen la tecnología usaba ha sido:
+
+	* Maven
+	* J2EE (Se ha realizado una Java Enterprise Application)
+	  Con un .ear que tiene un .war que tiene .jar (EJB).
+	* RESTEasy 
+	* EJB
+	* JUnit
+
+Ademas como aporte añado una carpeta BBDD donde se encuentra un
+archivo sql para la creación y carga de datos básicos para el
+proyecto.
+
+En este punto se ha desarrollado la parte back, pero no he conse-
+guido resolver (Conociendo bien la técnica) como hacer que RESTEasy
+reconozca mis EJB`s. Por lo que desde mi criterio debo decir
+que este apartado no esta completado, sin embargo vale la pena 
+analizarla pues todo está planteado como sería en un entorno 
+de producción de calidad.
+
+
+
+2.2- DESARROLLO FRONT RESPONSIVE
+
+
+El desarrollo de la parte front se ha realizado como un modelo
+fluido, ademas para varios componentes he tenido que usar media
+queries.
+
+El planteamiento desde el principio fue mobile first por lo que
+el desarrollo de base nació para ser responsive.
+
+
+
+2.3- PRUEBAS UNITARIAS JS
+
+
+En la raíz del proyecto front, directorio “1 Front”, se encuentra 
+un archivo “README” donde se explica como arrancar el proyecto, 
+como preparar el entorno para ejecutar tests con Protractor y 
+como ejecutar los tests realizados.
+
+
+
+2.4- PRUEBAS UNITARIAS BACKEND
+
+
+Dentro del proyecto “2 Back” se han creado pruebas unitarias tanto 
+de los DAO como de los Manager, con JUnit cargando una BBDD 
+“script-carga.sql” que los propios tests arrancan antes de 
+ejecutarse.
+
+Los archivos son:
+
+	* backend/backend-ejb/src/test/java/com/mycompany/dao
+	  /NotificationDAOtest.java
+	* backend/backend-ejb/src/test/java/com/mycompany/dao
+	  /ProjectDAOtest.java
+	* backend/backend-ejb/src/test/java/com/mycompany/manager
+	  /ProjectManagertest.java
+	* backend/backend-ejb/src/test/java/com/mycompany/manager
+	  /ProjectManagertest.java

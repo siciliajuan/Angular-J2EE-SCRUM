@@ -1,0 +1,92 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 1-1
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Crear la estructura inicial de carpetas y ficheros necesarios para empe-
+zar a trabajar en el proyecto
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Descripción:
+
+	Alcance:
+
+	* Crear la siguiente estructura de carpetas y ficheros:
+		
+		ROOT
+		  |
+		  |__ index.html
+		  |
+		  |
+		  |__ README.md
+		  |
+		  |
+		  |__ js
+		  |	|
+		  |	|__ data.js
+		  |	|
+		  |	|
+		  |	|__ main.js
+		  |	|
+		  |	|
+		  |	|__ route.js
+		  |	|
+		  |	|
+		  |	|__ controllers
+		  |	|	 |
+		  |	|	 |__ support-controllers.js
+		  |	|
+		  |	|	 
+		  |	|__ directives
+		  |	|	 |
+		  |	|	 |__ support-directives.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ template-directives.js
+		  |	|
+		  |	|	 
+		  |	|__ services
+		  |	|	 |
+		  |	|	 |__ support-services.js
+		  |	|	 
+		  |	|	
+		  |	|__ vendor
+		  |		 |
+		  |		 |__ angular-route.js
+		  |		 |
+		  |		 |
+		  |		 |__ angular.js
+		  |		 |
+		  |		 |
+		  |		 |__ jQuery.js
+		  |
+		  |
+		  |__ templates
+		  	|
+		  	|
+		  	|__ pages
+		  	      |
+		  	      |__ footer.html
+		  	      |
+		  	      |
+		  	      |__ header.html
+		  	      |
+		  	      |
+		  	      |__ support
+		  	      	    |
+		  	      	    |__ index.html
+		  	      	    |
+		  	      	    |
+		  	      	    |__ sup.html
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

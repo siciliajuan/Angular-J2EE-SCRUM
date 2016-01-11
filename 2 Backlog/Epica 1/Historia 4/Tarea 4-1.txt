@@ -1,0 +1,57 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 4-1
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+	
+Añadir la opción de poder cambiar el estado en la web.
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	Alcance:
+
+
+	* Añadir los siguientes elementos a la estructura de carpetas
+		ROOT
+		  |
+		  |__ js
+		  |	|
+		  |	|
+		  |	|__ controllers
+		  |	|	 |
+		  |	|	 |__ change-status—controllers.js
+		  |	|
+		  |	|	 
+		  |	|__ directives
+		  |		 |
+		  |		 |__ change—status-directives.js
+		  |
+		  |
+		  |__ templates
+		  	|
+		  	|
+		  	|__ pages
+		  	      |
+		  	      |
+		  	      |__ change-status
+		  	      	    |
+		  	      	    |__ change-status.html
+
+	* En change-status.html prepararlo para mostrar la información
+	  indicada en la historia.
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

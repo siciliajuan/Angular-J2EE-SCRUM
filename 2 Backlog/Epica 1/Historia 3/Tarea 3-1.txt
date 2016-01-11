@@ -1,0 +1,58 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 3-1
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+	
+Añadir contenido a la web de los comentarios dentro de las notificacio-
+nos de cada proyecto, siempre y cuando las tengan.
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	Alcance:
+
+
+	* Añadir los siguientes elementos a la estructura de carpetas
+		ROOT
+		  |
+		  |__ js
+		  |	|
+		  |	|
+		  |	|__ controllers
+		  |	|	 |
+		  |	|	 |__ comments-controllers.js
+		  |	|
+		  |	|	 
+		  |	|__ directives
+		  |		 |
+		  |		 |__ comments-directives.js
+		  |
+		  |
+		  |__ templates
+		  	|
+		  	|
+		  	|__ pages
+		  	      |
+		  	      |
+		  	      |__ comments
+		  	      	    |
+		  	      	    |__ comments.html
+
+	* En comments.html prepararlo para mostrar la información
+	  indicada en la historia.
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,0 +1,130 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+HISTORIA 5
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Como AT quiero que la web de gestión de incidencias este
+estilizada y usable.
+ 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	Situación actual:
+
+
+	Actualmente tenemos un web que muestra todos los proyectos,
+	las notificaciones que tienen asociadas y los comentarios de
+	esas notificaciones, además hay una opción para poder cambiar
+	el estado de una notificación documentando las razones en un
+	comentario.
+
+	Ya tenemos funcionalmente todo, ahora es cuestión de conse-
+	guir lo que piden los diseños.	
+	
+
+	
+	Descripción:
+
+
+	Queremos que la web se muestre repartida en varias pantallas
+	como muestran los diseños, las pantallas son las siguientes:
+		* /support
+			Será la home de la web, una ven aterrizado 
+			aquí se mostrará un listado de todos los
+			proyectos de la empresa con una opción de 
+			mostrar sus notificaciones.
+			Esta opción mostrará los siguientes mensajes
+			según los tipos de notificaciones que tenga.
+				* “Historial de notificaciones (Todas
+				   resueltas)”
+				* “Historial de notificaciones (noti-
+				   ficacaciones pendientes)”
+				* “No tiene notificaciones”
+		* /support/notifictions
+			Es la pantalla que lista las notificaciones 
+			de un proyecto dado. 
+			Como muestran las imágenes, tiene dos 
+			opciones, una para cambiar el estado de la
+			notificación y otra para ver el listado de 
+			cambios y sus comentarios.
+			En caso de que el proyecto no tenga notifica-
+			ciones mostrar el mensaje que muestra los 
+			diseños.
+		* /support/notifications/comments
+			Donde se mostrará el historial de los cambios
+			de estado de una notificación con sus 
+			comentarios
+		* /support/notifications/change-status
+			Formulario que permite cambiar el estado de 
+			una notificación y añadir un comentario para
+			documentar las razones y situación de ese
+			cambio.
+	Todas las pantallas deben tener el header, footer y la barra 
+	de navegación semilla que muestran los diseños.
+
+
+
+	Alcance:
+	
+
+	* Conseguir que la web se muestre como en los diseños y su 
+	  usabilidad
+		* Crear estructura de carpeta y añadir archivos 
+		  necesarios
+		* Crear rutas para cada una de las pantallas
+		* Modificar, si es necesario, los controladores
+		  para trabajar con las nuevas rutas
+		* Crear directivas necesarias para cargar las 
+		  distintas pantallas y su contenido.
+		* Añadir el seed navbar en todas las pantallas como
+		  muestran los diseños.
+		* Crear servicio Nav que mantenga actualizado en 
+		  contenido de la barra de navegación semilla en 
+		  todo momento.
+		* Crear estilos necesarios para conseguir un aspecto 
+		  idéntico o muy cercano a los diseños.
+			* Muy importante mostrar los posibles errores
+			  al introducir los datos en el formulario
+			  de cambio de estado. En caso de duda 
+			  al responsable del proyecto.
+
+
+
+	Information adicional:
+
+
+	Todas las imágenes se pueden encontrar en la raíz del backlog
+	en la carpeta “/backlog/diseños/“
+	
+	para conseguir una imagen más corporativa en 
+	“/backlog/diseños/resources/“ se encuentran elementos para 
+	conseguir fácilmente el background del body.
+	
+	
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Épica relacionada:
+
+	* Epica 1
+
+Tareas relacionadas:
+	
+	* Tarea 5-1 
+	* Tarea 5-2 
+	* Tarea 5-3 
+	* Tarea 5-4
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

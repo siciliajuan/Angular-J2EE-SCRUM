@@ -1,0 +1,32 @@
+<div id="title">
+	<h2>Comentarios:</h2>
+</div>
+<ul>
+	<div ng-hide="commentsCtrl.comments.length">
+		Ningún comentario
+	</div>
+	<div ng-show="commentsCtrl.comments.length">	
+		<li id="comment" ng-repeat="comment in commentsCtrl.comments">
+			<div id="project">
+				<p ng-show="comment.from == 1"><b>Desde:&nbsp</b>Servicio de Atenci&oacute;n al Cliente</p>
+				<p ng-show="comment.from == 0"><b>Desde:&nbsp</b>{{commentsCtrl.author}}</p>
+				<p><b>Fecha: </b>{{comment.fecha.getDate()}}/{{comment.fecha.getMonth()}}/{{comment.fecha.getFullYear()}}</p>
+				<p ng-show="comment.statusAnt == 0"><b>Estado anterior:&nbsp;</b>Abierta</p>
+				<p ng-show="comment.statusAnt == 1"><b>Estado anterior:&nbsp;</b>En progreso</p>
+				<p ng-show="comment.statusAnt == 2"><b>Estado anterior:&nbsp;</b>Resuelta</p>
+				<p ng-show="comment.statusAnt == 3"><b>Estado anterior:&nbsp;</b>Cerrada</p>
+				<p ng-show="comment.statusAnt == 4"><b>Estado anterior:&nbsp;</b>Duplicada</p>
+				<p ng-show="comment.statusAnt == 5"><b>Estado anterior:&nbsp;</b>No se resuelve</p>
+				<p ng-show="comment.statusAnt == 6"><b>Estado anterior:&nbsp;</b>Necesita Feedback</p>
+				<p ng-show="comment.statusAct == 0"><b>Estado actual:&nbsp;</b>Abierta</p>
+				<p ng-show="comment.statusAct == 1"><b>Estado actual:&nbsp;</b>En progreso</p>
+				<p ng-show="comment.statusAct == 2"><b>Estado actual:&nbsp;</b>Resuelta</p>
+				<p ng-show="comment.statusAct == 3"><b>Estado actual:&nbsp;</b>Cerrada</p>
+				<p ng-show="comment.statusAct == 4"><b>Estado actual:&nbsp;</b>Duplicada</p>
+				<p ng-show="comment.statusAct == 5"><b>Estado actual:&nbsp;</b>No se resuelve</p>
+				<p ng-show="comment.statusAct == 6"><b>Estado actual:&nbsp;</b>Necesita Feedback</p>
+				<p><b>Información:&nbsp</b>{{comment.comment}}</p>
+			</div>
+		</li>
+	</div>
+</ul>

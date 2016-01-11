@@ -1,0 +1,81 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+HISTORIA 2
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Como AT quiero que en vez de un link a notificaciones, se muestre
+un listado de las notificaciones de un proyecto.
+ 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	Situación actual:
+	
+
+	Actualmente tenemos una web que lista la información necesaria
+	de los proyectos. Ahora queremos que añadir que si un proyecto
+	tiene notificaciones asociadas, listar esas notificaciones.
+
+	De momento todo sigue sin ningún tipo de estilo, es una página 
+	DUMMIE.
+
+	La intención es tener un desarrollo rápido con el cual poder 
+	confirmar que la información que muestran las notificaciones es
+	la adecuada y esperada por la empresa.
+
+	De momento todo el desarrollo será front, no hay que programar
+	nada en back.
+
+
+
+	Alcance:
+
+
+	* dentro de cada proyecto mostrar un listado de sus notifica-
+	  ciones con la siguiente información.
+		* Fecha
+		* Estado (los estados se indican en la Epica)
+			* Abierta
+			* En progreso
+			* Resuelta
+			* Cerrada
+			* Duplicada
+			* No se resuelve
+			* Necesita Feedback
+		* Puedes modificar el estado aquí (aquí es un link vacio
+		  en el futuro dirigirá a la opción de modificar estado).
+		* Nivel, es un campo opcional puede mostrarse o no y los
+		  niveles se indican en la épica.
+		* Autor
+		* Título
+		* Descripción
+		* Ver historial de comentarios (link vacío, en el futuro 
+		  dirigirá al historial de comentarios asociados a los
+		  cambios de estado de la notificación).
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Épica relacionada:
+
+	* Epica 1
+
+Tareas relacionadas:
+
+	* Tarea 2-1
+	* Tarea 2-2 
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

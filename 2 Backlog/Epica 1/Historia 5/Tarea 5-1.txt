@@ -1,0 +1,82 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 5-1
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+	
+Crear estructura de carpeta y ficheros
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+
+	Alcance:
+
+
+	* Añadir los siguientes elementos a la estructura de carpetas
+		ROOT
+		  |
+		  |__ css
+		  |	|
+		  |	|__ main.css
+		  |
+		  |
+		  |__ js
+		  |	|
+		  |	| 
+		  |	|__ services
+		  |		 |
+		  |		 |__ nav-services.js
+		  |
+		  |
+		  |__ templates
+		  	|
+		  	|
+		  	|__ pages
+		  	      |
+		  	      |
+		  	      |__ support
+		  	      |	    |
+		  	      |	    |__ index.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ sup-nav.html
+		  	      |
+		  	      |
+		  	      |__ notifications
+		  	      |	    |
+		  	      |	    |__ index.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ notifications-nav.html
+		  	      |
+		  	      |
+		  	      |__ comments
+		  	      |	    |
+		  	      |	    |__ index.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ comments-nav.html
+		  	      |
+		  	      |
+		  	      |__ change-status
+		  	      	    |
+		  	      	    |__ index.html
+		  	      	    |
+		  	      	    |
+		  	      	    |__ change—status-nav.html
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

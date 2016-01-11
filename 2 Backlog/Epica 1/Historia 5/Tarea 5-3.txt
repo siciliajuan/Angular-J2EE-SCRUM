@@ -1,0 +1,35 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 5-3
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+	
+Crear seed navbar
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+
+	Alcance:
+
+
+	* Crear directiva y su html para cargar el nabab
+	* Crear servicio Nav el cual guarde en todo momento la 
+	  información actualizada de lo que debe mostrar el navbar.
+	* Modificar controladores para que cada pantalla trabaje con
+	  el navbar de manera correcta.
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

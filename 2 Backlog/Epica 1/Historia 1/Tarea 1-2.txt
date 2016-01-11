@@ -1,0 +1,64 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 1-2
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Desarrollo de template sobre con el cual se mostrará la web.
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Descripción:
+
+	Alcance:
+
+	* /index.html:
+		* Crear una estructura html básica
+		* En la etiqueta html introducir el módulo “supportTool”
+		* En el body crear un <div> con la directiva ng-view
+		* introducir los siguientes scripts
+			* “./js/vendor/angular.js”
+			* “./js/vendor/angular-route.js”
+			* “./js/vendor/jquery.js”
+			* “./js/data.js”
+			* “./js/main.js”
+			* “./js/route.js”
+			* "./js/directives/support-directives.js"
+			* "./js/directives/template-directives.js"
+			* "./js/controllers/support-controllers.js"
+			* "./js/services/support-services.js"
+	* /template/pages/footer.html
+		* con etiqueta footer y dentro un etiqueta de ancha a
+		  "https://twitter.com/juan_sicilia" y texto 
+	 	  @Juan_Sicilia
+	* /template/pages/header.html
+		* Con una etiqueta Header con un ancla a "#/support"
+	* /template/pages/support/index.html
+		* Donde se cargan las directivas del header el cuerpo
+		  y el footer.
+	* /template/pages/support/sup.html
+		* Debe tener un titulo “Proyectos”
+		* Debe tener un ul con un li con la directiva
+		  ng-repeat="project in projects" y mostrar el siguiente 
+		  contenido:
+			* “Proyecto: ”  project.name
+			* “Nombre de contacto: ”  
+			  project.customer.contact.name
+			* “Apellidos de contacto: ”  
+			  project.customer.contact.lastName
+			* “Email de contacto” 
+			  project.customer.contact.email
+ 			* “Teléfono de contacto: “ 
+			  project.customer.contact.phone
+			* ng-href="#/support/“ 
+			  Ver historial de notificaciones
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

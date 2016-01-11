@@ -1,0 +1,202 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Epica 1
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Como AT quiero un sistema web de gestión de incidencias entregadas
+por los clientes para poder dar un servicio de ágil y de calidad
+ 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Descripción:
+
+
+
+	Situación actual:
+	
+
+	Actualmente el único sistema que nuestros clientes tienen para 
+	que muestren sus problemas, preocupaciones y puedan ser atendidos 
+	es a través de teléfono lo cual no es ágil para poder generar una 
+	respuesta y frusta a nuestro cliente.
+
+	Sabemos lo importante que es para el cliente sentir que tiene un 
+	servicio de calidad y como esa sensación se convierte en una 
+	fidelización mayor que trae mas ingresos a la empresa, por lo que 
+	queremos crear un apartado web para mejorar este aspecto.
+
+	Descripción:
+
+	Se quiere crear una aplicación web que nos permita de un vistazo
+	ver los proyectos presentes y pasados para poder hacer un segui-
+	miento ágil de las posibles notificaciones que nuestros clientes
+	puedan crear.
+
+	Para ellos se debe poder seleccionar un proyecto y que una vez 
+	seleccionado se pueda ver un historial de las notificaciones que
+	tenga asociadas.
+
+	Esas notificaciones nos tienes que dar acceso a una opción para
+	cambiar su estado y cada cambio de estado debe quedar documen-
+	tado en un comentario.
+
+	Además esas notificaciones nos deben dar acceso a un historial
+	de cambios donde se muestre un listado de comentarios.
+
+	Las incidencias deben tener como mínimo:
+		* Título: Texto descriptivo y breve.
+		* Descripción: Descripción en detalle de la incidencia.
+		* Prioridad (OPCIONAL): Prioridad de la incidencia, sus niveles 
+		  son:
+			* Bajo
+			* Medio
+			* Alto
+			* Crítico
+
+	Los posibles estados de una incidencia son:
+		* Abierta: Recién creada por nuestro cliente.
+		* En progreso: Una vez el equipo técnico se pone a 
+		  trabajar con ella
+		* Resuelta: Una vez resuelta por el equipo técnico y
+		  a la espera de validación por el cliente.
+		* Cerrada: Una vez validada por el cliente
+		* Duplicada: Si el equipo técnico localiza otra 
+		  incidencia que trata el mismo asunto.
+		* No se resuelve: Si por alguna razón se decide que
+		  esta incidencia no debe ser abordada por el equipo
+		  técnico.
+		* Necesita feedback: Si el equipo técnico requiere
+		  de feedback del cliente.
+	
+	De estos estados se consideran como incidencia que requiere 
+	atención:
+		* Abierta
+		* En progreso
+		* Necesita feedback
+	Y no requieren atención el resto.
+
+	Con la intención de dar mas potencia a la aplicación añadir la 
+	información que se incluyen en los diseños.
+
+
+
+	Diseño:
+
+
+	* Crear un sitio web response con los siguientes apartados:
+	   * Proyectos
+		Este apartado es la home de esta web, los diseños se 
+		pueden ver en versión móvil y desktop en las siguientes
+		direcciones:
+		   * Móvil: 
+		       ../resources/movil/1 home-movil.png
+		   * Desktop: 
+		       ../resources/desktop/1 home-desktop.png
+	   * Proyectos / Notificaciones
+		Este apartado muestra las notificaciones de un proyecto
+		elegido en la pantalla anterior. Los diseños se pueden 
+		en las siguientes direcciones:
+		   * Móvil: 
+		       ../resources/movil/2 notificaciones-movil.png
+		   * Desktop: 
+		       ../resources/desktop/2 notificaciones-desktop.png
+	   * Proyectos / Notificaciones / Comentarios
+		Esta pantalla muestra los comentarios relativos a los
+		cambios de estado de una notificación elegida en el
+		paso anterior. Sus diseños se pueden ver en:
+		   * Móvil: 
+		       ../resources/movil/3 comentarios-movil.png
+		   * Desktop: 
+		       ../resources/desktop/3 comentarios-desktop.png
+	   * Proyectos / Notificaciones / Cambiar-estado
+		En este apartado se ofrece la posibilidad de actualizar
+		el estado de una notificación elegida en el paso ante-
+		prior, ademas la actualización va asociada a un comen-
+		trio explicativo de la situación. Los diseños se pueden
+		ver en:
+		   * Móvil: 
+		       ../resources/movil/4 cambio—estado-movil.png
+		   * Desktop: 
+		       ../resources/desktop/4 cambio—estado--desktop.png
+	   * Cada pantalla mostrará el header, footer y la semilla de 
+	   navegación que se muestran en las imágenes.
+
+
+
+	Usabilidad:
+
+
+	* Usabilidad para los siguientes apartados:
+	   * Semilla de navegación
+		* La semilla es clickeable y redirigc a la sección que
+		  nombra
+		* La semilla puede tener la siguiente estructura:
+		    * / Centro de soporte
+			* Redirige a #/support
+		    * / Centro de soporte / {nombre del proyecto}
+			* Redirige a #/support/notifications/
+			  {id proyecto}
+		    * / Centro de soporte / {nombre del proyecto} / co-
+		      mentarios
+			* Redirige a #/support/notifications/comments
+			  {id notificacion}
+		    * / Centro de soporte / {nombre del proyecto} / cam-
+		      biar estado
+			* Redirige a #/support/notifications/change-status
+			  {id notificacion}
+	   * Proyectos
+		* Cada proyecto tiene un link a su lista de notificaciones
+		* La lista de notificaciones debe indicar si estas todas
+		  En un estado que no requiere atención o alguna requiere 
+		  atención
+			* Mostrar mensaje
+				“Ver historial de notificaciones 
+				(notificaciones resueltas)”
+			* Mostrar mensaje
+				“Ver historial de notificaciones 
+				(notificaciones pendientes)”
+	   * Proyectos / Notificaciones
+		* Las notificaciones deben permitir modificar su estado
+		  En el link que muestran los diseños.
+		* Las notificaciones deben permitir mostrar sus comenta-
+		  rios como muestran los diseños.
+	   * Proyectos / Notificaciones / Comentarios
+		* No tiene usabilidad, solo mostrar los comentarios como
+		  indican los diseños.
+	   * Proyectos / Notificaciones / Cambiar-estado
+		* El selector debe mostrar todos los posibles estados a 
+		  seleccionar
+		* Tanto el selector como el testare tienen que tener 
+		  contenido para permitir guardar el cambio de estado y su
+		  comentario.
+		* Si se pulsa en guardar y el textarea esta vacío mostrar
+			“Por favor llena este campo”
+		* si una vez lleno el testare se vacía, mostrar el borde
+		  en rojo.
+
+
+
+	Información extra:
+	
+
+	* Las imágenes que se comentan se encuentras en sus rutas 
+	  dentro de la carpeta diseños que se puede ver en el backlog.
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Historias relacionadas:
+
+	* Historia 1 
+	* Historia 2 
+	* Historia 3
+	* Historia 4 
+	* Historia 5
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

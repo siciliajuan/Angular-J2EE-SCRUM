@@ -1,0 +1,30 @@
+<div id="project">
+	<form name="changeStatusForm" ng-submit="changeStatusForm.$valid && changeCtrl.changeStatus()" novalidate>
+		<div id="form">
+			<h2>Cambiar estado</h2>
+			<div id="select-form">
+				<label>Elige el estado:</label>
+				<br>
+				<select ng-model="changeCtrl.change.status" required>
+					<option ng-hide="changeCtrl.change.statusAnt == 0" value="0">Abierta</option>
+					<option ng-hide="changeCtrl.change.statusAnt == 1" value="1">En Progreso</option>
+					<option ng-hide="changeCtrl.change.statusAnt == 2" value="2">Resuelta</option>
+					<option ng-hide="changeCtrl.change.statusAnt == 3" value="3">Cerrada</option>
+					<option ng-hide="changeCtrl.change.statusAnt == 4" value="4">Duplicada</option>
+					<option ng-hide="changeCtrl.change.statusAnt == 5" value="5">No se resuelve</option>
+					<option ng-hide="changeCtrl.change.statusAnt == 6" value="6">Necesita Feedback</option>
+				</select>
+				<p class="error hidden">Campo obligatorio</p>
+			</div>
+			<div id="textarea-form">
+				<br>
+				<label>Añade un comentario:</label>
+				<br>
+				<textarea rows="7" placeholder="Escribe un comentario" ng-model="changeCtrl.change.comment.comment" required></textarea>
+				<p class="error hidden">Campo oblicatorio</p>
+			</div>
+			<br>
+			<input id="submit" type="submit" value="Guardar" /><br>
+		</div>
+	</form>
+</div>

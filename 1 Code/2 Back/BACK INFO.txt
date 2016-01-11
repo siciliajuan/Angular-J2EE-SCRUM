@@ -1,0 +1,135 @@
+----------------------------------------------------------------
+------------                                        ------------
+------------                 BACK-END               ------------
+------------                                        ------------
+----------------------------------------------------------------
+
+
+
+INTRODUCCIÓN:
+
+Este documento explica como se han resuelto los distintos puntos
+del desarrollo back-end.
+
+
+
+ÍNDICE:
+
+	* 1- Maven
+	* 2- Persistencia en BBDD
+	* 2.1- Entities, TransferObjects, Parsers y EntityTypes
+	* 3- Estructura DAO`s, Managers y Controllers
+	* 4- Log4j
+	* 5- Tests y BBDD en memoria
+	* 6- RestEasy/JSON (con EJB`s)
+		
+
+
+-                   -----------------------                    -
+
+
+
+1- MAVEN
+
+
+El proyecto se ha realizado con maven en su base. empecé usando
+el arquetipo enterprise application.
+
+Esto crea 4 proyectos inter-relacionados:
+
+	* POM Proyecto que tiene los demás como módulos y sirve
+	  para empaquetar toda aplicación como corresponde
+	* EAR Proyecto donde se crea el .ear con la java
+	  application.
+	* WAR Donde estas los servicios RESTEasy
+	* JAR Donde están los EJB`s.
+
+
+
+2- PERSISTENCIA EN BBDD
+
+
+Para la persistencia en BBDD he usado Hibernate con JPA 2 
+configurando las entidades y un archivo persistence.xml que es
+el archivo de configuración principal. Todo con MySQL.
+
+Para hacer esto mas profesional he externalizado la configura-
+ción de BBDD a un archivo .properties.
+
+
+
+2.1- ENTITIES, TRANSFEROBJECTS, PARSERS y ENTITYTYPES
+
+
+Para trabajar con JPA he utilizado @Entity y con las anotaciones
+necesarias para las relaciones con otras entidades otras anota-
+ciones tales como @OneToOne, etc.
+
+Para los casos en los que las entidades usan variables de tipo 
+entero que representan estados (Por ejemplo prioridad de una
+notificación) para que el código sea mas semántico he añadido
+EntityTypes que son enumerados con los datos apropiados, de tal
+manera que en vez de poner un numero se puede usar un enumerado
+con texto que explica que valor tiene.
+
+Como la aplicación manda objetos JSON a través de los servicios 
+REST con RETEasy, he añadido TransferObjects que permiten con-
+vertir una entidad en un objeto que pueda ser transferido como 
+JSON.
+
+Por último para para una mayor fácil conversión de JSON a Entity
+y viceversa he creado Persers de cada uno de ellos.
+
+
+
+3- ESTRUCTURA DAO’S, MANAGERS Y CONTROLLERS
+
+
+Para aplicar el MVC en un proyecto y conseguir que tenga una 
+estructura fácilmente comprensible he dividido todo el código
+del proyecto JAR en DAO`s donde se realiza las operaciones con
+BBDD, Managers donde se encuentra la lógica del negocio y 
+Controlares como para de unión con la vista (Estos último son
+directamente los servicios REST).
+
+
+
+4- LOG4J
+
+
+Para realizar un correcto seguimiento de lo que sucede en el
+servidor he añadido Log4j para logguear y mostrar la 
+información relevante del estado del servidor.
+
+
+
+5- TESTS Y BBDD EN MEMORIA
+
+
+He realizado tests tanto de los DAO’s como de los Manager
+para ello he usado JUnit y una configuración de persistencia
+independiente con HSQLDB.
+
+Los archivos son:
+
+	* backend/backend-ejb/src/test/java/com/mycompany/dao
+	  /NotificationDAOtest.java
+	* backend/backend-ejb/src/test/java/com/mycompany/dao
+	  /ProjectDAOtest.java
+	* backend/backend-ejb/src/test/java/com/mycompany/manager
+	  /ProjectManagertest.java
+	* backend/backend-ejb/src/test/java/com/mycompany/manager
+	  /ProjectManagertest.java
+
+
+
+6- RESTEASY y JSON
+
+
+Para los servicios REST que realizan la comunicación con la
+parte front, he configurado RESTEasy con Jackson provider y
+RESTEasy CDI.
+
+Para ello, ademas del beans.xml y crear una clase con los ser-
+vicios GET y PUT en mi caso, he tenido que configurar el archivo
+web.xml para guardar la configuración de los servicios REST.

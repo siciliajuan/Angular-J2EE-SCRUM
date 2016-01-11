@@ -1,0 +1,220 @@
+----------------------------------------------------------------
+------------                                        ------------
+------------                FRONT-END               ------------
+------------                                        ------------
+----------------------------------------------------------------
+
+
+
+INTRODUCCIÓN:
+
+Este documento explica como se han resuelto los distintos puntos
+del desarrollo front-end.
+
+
+
+ÍNDICE:
+
+	* 1- Estructura del proyecto.
+	* 2- Template.
+	* 3- Flujo del código
+		
+
+
+-                   -----------------------                    -
+
+
+
+1- ESTRUCTURA DEL PROYECTO
+
+		ROOT
+		  |
+		  |__ conf.js
+		  |
+		  |
+		  |__ index.html
+		  |
+		  |
+		  |__ README.md
+		  |
+		  |
+		  |__ spec.js
+		  |
+		  |
+		  |__ css
+		  |	|
+		  |	|__ main.css
+		  |
+		  |
+		  |__ js
+		  |	|
+		  |	|__ data.js
+		  |	|
+		  |	|
+		  |	|__ main.js
+		  |	|
+		  |	|
+		  |	|__ route.js
+		  |	|
+		  |	|
+		  |	|__ controllers
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ change-status—controllers.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ comments-controllers.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ notifications-controllers.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ support-controllers.js
+		  |	|
+		  |	|	 
+		  |	|__ directives
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ change—status-directives.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ comments-directives.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ notifications-directives.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ support-directives.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ template-directives.js
+		  |	|
+		  |	|	 
+		  |	|__ services
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ support-services.js
+		  |	|	 |
+		  |	|	 |
+		  |	|	 |__ nav-services.js
+		  |	|	 
+		  |	|	
+		  |	|__ vendor
+		  |		 |
+		  |		 |__ angular-route.js
+		  |		 |
+		  |		 |
+		  |		 |__ angular.js
+		  |		 |
+		  |		 |
+		  |		 |__ jQuery.js
+		  |
+		  |
+		  |__ templates
+		  	|
+		  	|
+		  	|__ pages
+		  	      |
+		  	      |__ footer.html
+		  	      |
+		  	      |
+		  	      |__ header.html
+		  	      |
+		  	      |
+		  	      |__ change-status
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ index.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ change-status.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ change—status-nav.html
+		  	      |
+		  	      |
+		  	      |__ comments
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ index.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ comments.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ comments-nav.html
+		  	      |
+		  	      |
+		  	      |__ notifications
+		  	      |	    |
+		  	      |	    |__ index.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ notifications.html
+		  	      |	    |
+		  	      |	    |
+		  	      |	    |__ notifications-nav.html
+		  	      |
+		  	      |
+		  	      |__ support
+		  	      	    |
+		  	      	    |__ index.html
+		  	      	    |
+		  	      	    |
+		  	      	    |__ sup.html
+		  	      	    |
+		  	      	    |
+		  	      	    |__ sup-nav.html
+
+
+
+2- TEMPLATE
+
+El template esta pensado para que no haya código duplicado y que
+cada pantalla tenga un significado semántico único.
+
+El index.html en el root del proyecto carga un ng-view con todas
+las posibles rutas para tener una mayor seguridad al no desvelar
+la estructura real de carpetas y archivos y solo mostrar las
+rutas que están establecidas.
+
+cada ruta carga una directiva que tiene un índex.html, uno para 
+pa página principal donde se listan los proyectos otro para la 
+página que lista las notificaciones del un proyecto seleccionado,
+otro para la página que lista los cambios de estado de una noti-
+ficción y otra para la pantalla que da opción a cambiar el 
+estado de una notificación.
+
+cada índex carga cuatro directivas, el reader, el footer, la que
+muestra la barra de navegación y la que contiene el contenido 
+principal de la pantalla a mostrar en cuestión.
+
+
+
+3- FLUJO DEL CÓDIGO
+
+
+El flujo en esta aplicación siempre empieza por solicitar una 
+ruta. 
+
+Una vez pedida una ruta se busca el índex.html de la página
+a mostrar, el cual contiene directivas para reader, footer,
+barra de navegación y contenido principal, ademas, de ser 
+código para modificar el front, se usa la propiedad Link del
+objeto que devuelve la directiva.
+
+Cada pantalla tiene su propio controlador el cual según el caso 
+se cargará en la ruta o en la directiva.
+
+Todos los controladores usan el servicio “Nav” el cual tiene
+la información necesaria para que cada controlar cargue 
+correctamente los datos de la barra de navegación.
+
+Los controladores de las pantallas que muestran los proyectos,
+notificaciones o historial de cambios de una notificación usan
+el servicio “Project” el cual emula la comunicación con el 
+servidor.
+
+
+
+

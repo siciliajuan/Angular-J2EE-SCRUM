@@ -1,0 +1,71 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+HISTORIA 4
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Como AT quiero que la web de gestión de notificaciones de los 
+clientes me permita un sistema para modificar es estado de una 
+notificación añadiendo un comentario que documente mis razones
+ 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	* Situación actual:
+
+	Actualmente tenemos una web que nos permite listar los proyectos
+	con sus notificaciones y cada notificaciones con sus comentarios
+	de los cambios de estado.
+
+	La empresa quiere una herramienta que le permita modificar el 
+	estado de una notificación y poder documentar sus razones con un
+	comentario.
+
+	Para garantizar que el desarrollo es correcto queremos hacer 
+	una versión rápida de esta funcionalidad con el fin de ofrecer-
+	les valor rápido y recibir feedback de la empresa que demuestre 
+	que vamos por buen camino.
+
+	De momento todo el desarrollo será front, no hay que programar
+	nada en back.
+
+
+	* Alcance:
+
+		* Dentro de una notificación, debajo del estado de una 
+		  notificación mostrar un formulario con un select que
+		  permita seleccionar un estado nuevo y un textarea donde 
+		  poder introducir un comentario. 
+		* Los cambios realizados y los comentarios creados 
+		  deben poder verse en directo en pantalla.
+
+	
+
+		
+		
+
+	
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Épica relacionada:
+
+	* Epica 1
+
+Tareas relacionadas:
+
+	* Tarea 4-1 
+	* Tarea 4-2 
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

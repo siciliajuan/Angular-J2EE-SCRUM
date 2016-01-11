@@ -1,0 +1,71 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+HISTORIA 1
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Como AT quiero web de gestión de incidencia de clientes sin nin-
+gun tipo de estética que liste los proyectos que tenemos.
+ 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Descripción:
+
+
+
+	Situación actual:
+
+	
+	Actualmente no tenemos desarrollado nada de la “Epica 1” para
+	dar un primer paso que muestre valor, queremos crear una web 
+	sin estilos que liste los proyectos para poder mostrar algo
+	rápido a la empresa y saber si esa información de los proyectos 
+	les es útil o debemos modificar algo.
+
+
+
+	Description:
+
+
+	Queremos crear una web sin estilos que cargue por directivas
+	el Header, el footer y el cuerpo de la página.
+
+	Queremos que la página liste los proyectos de la empresa y nos 
+	muestre un link (de momento DUMMIE) que en un futuro nos diri-
+	girá a las notificaciones que los clientes tengan creadas en
+	ese proyecto.
+
+	De momento todo el desarrollo será front, no hay que programar
+	nada en back.
+
+
+
+	Alcance:
+
+
+	* Crear la estructura del proyecto como indica la “Tarea 1-1”.
+	* Crear la estructura del template que vamos a usar en nuestro
+	  desarrollo como indica la “Tarea 1-2”.
+	* Hacer el desarrollo de código para que lo planteado en las
+	  dos primeras tareas funcionen como indica la “Tarea 1-3”.
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Epica relaciona:
+
+	* Epica 1
+
+Tareas relacionadas:
+
+	* Tarea 1-1 
+	* Tarea 1-2 
+	* Tarea 1-3 
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

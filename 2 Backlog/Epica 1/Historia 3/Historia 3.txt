@@ -1,0 +1,72 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+HISTORIA 3
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Como AT quiero que la web de gestión de incidencia muestre, si 
+los tiene, los comentarios asociados a una indicencia de un proyecto.
+ 
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	Situación actual:
+
+	
+	Actualmente tenemos una web que nos permite visualizar los pro-
+	yectos con sus notificaciones relacionadas, como queremos tener
+	historial de cambios de estados con comentarios para documentar
+	la razón de los cambios, vamos a mostrar el historial de comen-
+	tarios relacionados con una notificación.
+
+	Con la intención de saber si el planteamiento de los comen-
+	tarios es el adecuado y esperado por parte de la empresa vamos
+	ha seguir con la página DUMMIE para mostrarles algo rápido,
+	mas tarde maquetaremos todo.
+
+	De momento todo el desarrollo será front, no hay que programar
+	nada en back.
+
+
+
+	Alcance:
+	
+
+	* Dentro de una notificación mostrar el histórico de cambios y 
+	  sus comentarios con la siguiente información.
+		* Desde: Es quien realizó el cambio el cliente o 
+		  nosotros
+		* Estado anterior: El estado anterior de la 
+		  notificación
+		* Estado Actual: En que estado se encuentra actualmente
+		  la notificación.
+		* Desde: Es quien realizó el cambio el cliente o 
+		  nosotros
+		* Información: Descripción detallada del motivo del 
+		  cambio de la notificación
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Épica relacionada:
+	
+	* Epica 1
+
+Tareas relacionadas:
+
+	* Tarea 3-1 
+	* Tarea 3-2
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

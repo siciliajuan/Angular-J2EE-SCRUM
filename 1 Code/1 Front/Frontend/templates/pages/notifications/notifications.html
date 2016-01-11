@@ -1,0 +1,32 @@
+<div id="title">
+	<h2>Notificaciones:</h2>
+</div>
+<ul>
+	<div ng-hide="notsCtrl.nots.length">
+		Ninguna notificación
+	</div>	
+	<div ng-show="notsCtrl.nots.length">
+		<li id="notification" ng-repeat="not in notsCtrl.nots">
+			<div id="project">
+				<p><b>Fecha: </b>{{not.fecha.getDate()}}/{{not.fecha.getMonth()}}/{{not.fecha.getFullYear()}}</p>
+				<p ng-show="not.status == 0"><b>Estado:&nbsp;</b>Abierta</p>
+				<p ng-show="not.status == 1"><b>Estado:&nbsp;</b>En progreso</p>
+				<p ng-show="not.status == 2"><b>Estado:&nbsp;</b>Resuelta</p>
+				<p ng-show="not.status == 3"><b>Estado:&nbsp;</b>Cerrada</p>
+				<p ng-show="not.status == 4"><b>Estado:&nbsp;</b>Duplicada</p>
+				<p ng-show="not.status == 5"><b>Estado:&nbsp;</b>No se resuelve</p>
+				<p ng-show="not.status == 6"><b>Estado:&nbsp;</b>Necesita Feedback</p>
+				<p>Puedes modificar el estado <a ng-href="#/support/notifications/change-status/{{not.id}}"> Aqu&iacute;</a></p>
+				<p ng-show="not.level == 0"><b>Nivel:&nbsp;</b>Poco importante</p>
+				<p ng-show="not.level == 1"><b>Nivel:&nbsp;</b>importante</p>
+				<p ng-show="not.level == 2"><b>Nivel:&nbsp;</b>Muy importante</p>
+				<p ng-show="not.level == 3"><b>Nivel:&nbsp;</b>Cr&iacute;tico</p>
+				<p><b>Autor:&nbsp;</b>{{not.author.name}}</p>
+				<p><b>Titulo:&nbsp;</b>{{not.title}}</p>
+				<p><b>Descripcion:&nbsp;</b>{{not.description}}</p>
+				<a ng-href="#/support/notifications/comments/{{not.id}}"><p>Ver historial de comentarios</p>
+				</a>
+			</div>
+		</li>
+	</div>
+</ul>

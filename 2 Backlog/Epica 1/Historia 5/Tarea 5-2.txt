@@ -1,0 +1,45 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 5-2
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+	
+Crear estructura de navegación y las rutas necesarias
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	Alcance:
+
+
+	* Crear las siguientes rutas:
+		* /support/notifications/:id
+		  que dirige a las notificaciones de un proyecto:
+		  ./templates/pages/notifications/index.html
+		* /support/notifications/comments/:id
+		  que dirige a los comentarios de una notificación:
+		  ./templates/pages/comments/index.html
+		* /support/notifications/change-status/:id
+		  que dirige a cambiar estado de una notificación:
+		  ./templates/pages/change-status/index.html
+		+ Cada índex debe cargar las directivas del header, 
+		  cuerpo que le corresponda y footer.
+	* Crear las directivas necesarias para los cuerpos de cada
+	  pantalla
+	* Modificar los controladores (si es necesario) para mostrar
+	  adecuadamente la información en cada pantalla
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

@@ -1,0 +1,35 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 3-2
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Añadir la lógica necesaria para que la historia funcione correctamente
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+Descripción:
+
+
+
+	Alcance:
+
+		
+	* Crear una directiva para cargar comments.html e 
+	  introducir la directiva en sup.html
+	* La directiva debe de cargar los comentarios de una 
+	  notificación dada pidiéndoselas a support-services.js 
+	  pasándole el id de la notificación.
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -

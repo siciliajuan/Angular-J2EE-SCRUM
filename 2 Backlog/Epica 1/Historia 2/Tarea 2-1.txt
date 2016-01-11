@@ -1,0 +1,57 @@
+
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Tarea 2-1
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Título:
+
+Añadir contenido a la web de las notificaciones dentro de cada proyecto 
+que tenga notificaciones asociadas.
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+Descripción:
+
+
+
+	Alcance:
+
+
+	* Añadir los siguientes elementos a la estructura de carpetas
+		ROOT
+		  |
+		  |__ js
+		  |	|
+		  |	|
+		  |	|__ controllers
+		  |	|	 |
+		  |	|	 |__ notifications-controllers.js
+		  |	|
+		  |	|	 
+		  |	|__ directives
+		  |		 |
+		  |		 |__ notifications-directives.js
+		  |
+		  |
+		  |__ templates
+		  	|
+		  	|
+		  	|__ pages
+		  	      |
+		  	      |
+		  	      |__ notifications
+		  	      	    |
+		  	      	    |__ notifications.html
+
+	* En notifications.html prepararlo para mostrar la información
+	  indicada en la historia.
+
+
+
+
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
